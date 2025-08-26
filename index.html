@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Information Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <h1>Employee Information Management System</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#table">Employee Data</a></li>
+        <li><a href="#form">Registration</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main layout: Grid with content + sidebar -->
+  <main class="main-grid">
+        <!-- Sidebar Section -->
+    <aside class="sidebar">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#table">Employee Data</a></li>
+        <li><a href="#form">Registration</a></li>
+      </ul>
+    </aside>
+    <!-- Content Section -->
+    <section class="content">
+      <article id="overview">
+        <h2>Where it Works</h2>
+        <p>The Employee Information Management System (EIMS) is suitable for:</p>
+        <ul>
+          <li>Governmental organizations
+            <ol>
+              <li>Schools</li>
+              <li>Universities</li>
+              <li>Banks</li>
+              <li>Revenue administration offices</li>
+              <li>Other agencies</li>
+            </ol>
+          </li>
+          <li>Non-Governmental Organizations (NGOs)</li>
+        </ul>
+      </article>
+
+      <article id="table">
+        <h2>Information Style</h2>
+        <p>The EIMS manages employee data in tabular form for easier access and filtering.</p>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Middle Name</th>
+                <th>Last Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Sex</th>
+                <th>Birth Date</th>
+                <th>Age</th>
+                <th>Recruit Date</th>
+                <th>Experience</th>
+                <th>Role</th>
+                <th>Salary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Behaylu</td>
+                <td>Tadele</td>
+                <td>Alemu</td>
+                <td>0943588129</td>
+                <td>behaylu@example.com</td>
+                <td>M</td>
+                <td>12/12/1998</td>
+                <td>22</td>
+                <td>12/12/2022</td>
+                <td>3</td>
+                <td>Lecturer</td>
+                <td>14,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article id="form">
+        <h2>Employee Registration Form</h2>
+        <form action="#" method="POST" class="form-grid">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+
+          <label for="middleName">Middle Name:</label>
+          <input type="text" id="middleName" name="middleName" required>
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="sex">Sex:</label>
+          <select id="sex" name="sex" required>
+            <option value="">--Select--</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+
+          <label for="birthDate">Birth Date:</label>
+          <input type="date" id="birthDate" name="birthDate" required>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="0" required>
+
+          <label for="recruitDate">Recruitment Date:</label>
+          <input type="date" id="recruitDate" name="recruitDate" required>
+
+          <label for="role">Role:</label>
+          <input type="text" id="role" name="role" required>
+
+          <label for="salary">Salary in ETB:</label>
+          <input type="number" id="salary" name="salary" min="1000" required>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+
+          <label for="conpassword">Confirm Password:</label>
+          <input type="password" id="conpassword" name="conpassword" required>
+
+          <button type="submit">Submit</button>
+        </form>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2025 Employee Information Management System</p>
+  </footer>
+</body>
+</html>
